@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:padding="20dp"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_covid"
+        android:layout_gravity="center"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/bienvenidalbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a la CovidApp!"
+        android:layout_margin="28dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:transitionName="textTrans"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/usertxt"
+            android:hint="Email">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/passwordtxt"
+            android:hint="Password"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/olvidarPassword"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end"
+            android:text="Olvidaste tu Contraseña?"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/colorSeconLounch"
+            android:text="INICIAR"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nuevoUsuario"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Eres nuevo? Registrate"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
