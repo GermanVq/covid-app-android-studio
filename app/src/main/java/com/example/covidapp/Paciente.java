@@ -8,6 +8,7 @@ public class Paciente {
     private String direccion;
     private String numero;
     private String contacto;
+    private String sexo;
     private String antecendentes;
     private String sintomas;
     private Boolean covid;
@@ -68,6 +69,14 @@ public class Paciente {
         this.contacto = contacto;
     }
 
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
     public String getAntecendentes() {
         return antecendentes;
     }
@@ -92,7 +101,7 @@ public class Paciente {
         this.covid = covid;
     }
 
-    public Paciente(int foto, String nombre, String eps, String motivio, String direccion, String numero, String contacto, String antecendentes, String sintomas, Boolean covid) {
+    public Paciente(int foto, String nombre, String eps, String motivio, String direccion, String numero, String contacto, String sexo, String antecendentes, String sintomas, Boolean covid) {
         this.foto = foto;
         this.nombre = nombre;
         this.eps = eps;
@@ -100,8 +109,10 @@ public class Paciente {
         this.direccion = direccion;
         this.numero = numero;
         this.contacto = contacto;
+        this.sexo = sexo;
         this.antecendentes = antecendentes;
         this.sintomas = sintomas;
         this.covid = covid;
     }
+
 }
