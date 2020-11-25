@@ -90,9 +90,10 @@ public class SingUpActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                           Intent intent = new Intent(SingUpActivity.this, MenuActivity.class);
-                           startActivity(intent);
-                           finish();
+                            Toast.makeText(SingUpActivity.this, "Registro Exitoso!", Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(SingUpActivity.this, MenuActivity.class);
+                            startActivity(intent);
+                            finish();
                         } else {
                             Toast.makeText(SingUpActivity.this, "Fallo el registro", Toast.LENGTH_LONG).show();
                         }
