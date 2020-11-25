@@ -11,7 +11,7 @@ public class Paciente {
     private String sexo;
     private String antecendentes;
     private String sintomas;
-    private Boolean covid;
+    private String covid;
 
     public int getFoto() {
         return foto;
@@ -93,15 +93,15 @@ public class Paciente {
         this.sintomas = sintomas;
     }
 
-    public Boolean getCovid() {
+    public String getCovid() {
         return covid;
     }
 
-    public void setCovid(Boolean covid) {
+    public void setCovid(String covid) {
         this.covid = covid;
     }
 
-    public Paciente(int foto, String nombre, String eps, String motivio, String direccion, String numero, String contacto, String sexo, String antecendentes, String sintomas, Boolean covid) {
+    public Paciente(int foto, String nombre, String eps, String motivio, String direccion, String numero, String contacto, String sexo, String antecendentes, String sintomas, String covid) {
         this.foto = foto;
         this.nombre = nombre;
         this.eps = eps;
