@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">CovidApp</string>
+    <string name="guardar">Guardar</string>
+    <string name="registrar">Registrar</string>
+    <string name="borrar">Borrar</string>
+    <string name="salir">Salir</string>
+    <string name="nombre">Nombre</string>
+    <string name="eps">Eps</string>
+    <string name="motivo">Motivo</string>
+    <string name="direccion">Dirección</string>
+    <string name="numero">Número</string>
+    <string name="contacto">Contacto</string>
+    <string name="sexo">Sexo</string>
+    <string name="Antecedentes">Antecentendes</string>
+    <string name="sintomas">Sintomas</string>
+    <string name="covid">Covid</string>
+    <string name="registrar_paciente">Formulario Paciente</string>
+    <string name="sura">Sura</string>
+    <string name="coomeva">Coomeva</string>
+    <string name="susalud">Susalud</string>
+    <string name="cafe_salud">Cafesalud</string>
+    <string name="hombre">Hombre</string>
+    <string name="Mujer">Mujer</string>
+    <string name="tos">Tos</string>
+    <string name="gripa">Gripa</string>
+    <string name="dolor_cabeza">Dolor</string>
+    <string name="fatiga">Fatiga</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+
+    <string-array name="epsSp">
+        <item>@string/sura</item>
+        <item>@string/coomeva</item>
+        <item>@string/susalud</item>
+        <item>@string/cafe_salud</item>
+    </string-array>
+
+    <string-array name="sexoSp">
+        <item>@string/hombre</item>
+        <item>@string/Mujer</item>
+    </string-array>
+
 </resources>
