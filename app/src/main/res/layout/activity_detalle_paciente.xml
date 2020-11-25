@@ -15,10 +15,11 @@
             android:id="@+id/lblTituloDetalle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Detalle Paciente"
+            android:text="@string/detalle_paciente"
             android:textAlignment="center"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/colorSeconLounch"/>
 
         <ImageView
             android:id="@+id/imgFotoDetalle"
@@ -44,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="nombre"
+                    android:text="@string/nombre"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -66,7 +67,7 @@
                     android:id="@+id/lblTituloEps"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="EPS"
+                    android:text="@string/eps"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textSize="18sp"
@@ -90,7 +91,7 @@
                     android:id="@+id/lblTituloMotivo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="motivo"
+                    android:text="@string/motivo"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -113,7 +114,7 @@
                     android:id="@+id/lblTituloDireccion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dirección"
+                    android:text="@string/direccion"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -136,7 +137,7 @@
                     android:id="@+id/lblTituloNumero"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Número"
+                    android:text="@string/numero"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -159,7 +160,7 @@
                     android:id="@+id/lblTituloContacto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contacto"
+                    android:text="@string/contacto"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -182,7 +183,7 @@
                     android:id="@+id/lblSexoNumero"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sexo"
+                    android:text="@string/sexo"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -205,7 +206,7 @@
                     android:id="@+id/lblTituloAntecedentes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Antecedentes"
+                    android:text="@string/Antecedentes"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -228,7 +229,7 @@
                     android:id="@+id/lblTituloSintomas"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sintomas"
+                    android:text="@string/sintomas"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -251,7 +252,7 @@
                     android:id="@+id/lblTituloCovid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Covid"
+                    android:text="@string/covid"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />

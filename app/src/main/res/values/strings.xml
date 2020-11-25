@@ -11,7 +11,7 @@
     <string name="numero">Número</string>
     <string name="contacto">Contacto</string>
     <string name="sexo">Sexo</string>
-    <string name="Antecedentes">Antecentendes</string>
+    <string name="Antecedentes">Antecedentes</string>
     <string name="sintomas">Sintomas</string>
     <string name="covid">Covid</string>
     <string name="registrar_paciente">Formulario Paciente</string>
@@ -27,6 +27,19 @@
     <string name="fatiga">Fatiga</string>
     <string name="si">Si</string>
     <string name="no">No</string>
+    <string name="guardado">Paciente guardado correctamente</string>
+    <string name="helicoptero">Helicóptero Apache</string>
+    <string name="iniciar">INICIAR</string>
+    <string name="bienvendida">Bienvenido a la CovidApp!</string>
+    <string name="nuevo_user">Eres nuevo? Registrate</string>
+    <string name="olvido_contrasena">Olvidaste tu contraseña?</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="registrate">Registrate para ingresar a la App</string>
+    <string name="repetir_contrasena">Repetir contraseña</string>
+    <string name="ya_registrado">Ya estas registrado? click para ingresar</string>
+    <string name="detalle_paciente">Detalle de Paciente</string>
 
     <string-array name="epsSp">
         <item>@string/sura</item>
@@ -38,6 +51,7 @@
     <string-array name="sexoSp">
         <item>@string/hombre</item>
         <item>@string/Mujer</item>
+        <item>@string/helicoptero</item>
     </string-array>
 
 </resources>

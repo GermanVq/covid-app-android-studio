@@ -48,5 +48,11 @@ public class MenuActivity extends AppCompatActivity {
         }
         return super.onContextItemSelected(item);
     }
+    public void agregar(View v){
+        Intent intent;
+        intent = new Intent(MenuActivity.this, CrearPaciente.class);
+        startActivity(intent);
+        finish();
+    }
 
 }
