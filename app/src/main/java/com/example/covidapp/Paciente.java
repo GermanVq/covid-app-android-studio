@@ -1,5 +1,7 @@
 package com.example.covidapp;
 
+import java.util.ArrayList;
+
 public class Paciente {
     private int foto;
     private String nombre;
@@ -114,5 +116,6 @@ public class Paciente {
         this.sintomas = sintomas;
         this.covid = covid;
     }
+    public  void  guardar(){ Datos.guardar(this);}
 
 }

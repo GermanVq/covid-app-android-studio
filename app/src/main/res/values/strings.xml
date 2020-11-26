@@ -40,7 +40,7 @@
     <string name="repetir_contrasena">Repetir contraseña</string>
     <string name="ya_registrado">Ya estas registrado? click para ingresar</string>
     <string name="detalle_paciente">Detalle de Paciente</string>
-
+    <string name="mensaje_guardado">Paciente guardado exitosamente!</string>
     <string-array name="epsSp">
         <item>@string/sura</item>
         <item>@string/coomeva</item>

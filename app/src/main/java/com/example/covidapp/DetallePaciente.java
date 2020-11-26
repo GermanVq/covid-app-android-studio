@@ -18,6 +18,7 @@ public class DetallePaciente extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_paciente);
 
+        foto = findViewById(R.id.imgFotoDetalle);
         nombre = findViewById(R.id.lblNombreDetalle);
         eps = findViewById(R.id.lblEpsDetalle);
         motivo = findViewById(R.id.lblMotivoDetalle);
