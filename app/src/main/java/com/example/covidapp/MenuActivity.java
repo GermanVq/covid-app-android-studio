@@ -53,10 +53,10 @@ public class MenuActivity extends AppCompatActivity implements AdapterPaciente.O
         listadoPaciente =(RecyclerView) findViewById(R.id.lstPaciente);
 
         paciente = Datos.obtener();
-        paciente = new ArrayList<Paciente>();
+        //paciente = new ArrayList<Paciente>();
         //ArrayList<String> sintomas = new ArrayList<String>();
         //sintomas.add(0, "tos");
-        paciente.add(new Paciente(R.drawable.hombre, "sura", "sura","ninguno", "cr7", "322222", "no", "hombre", "ninguno", "tos", "si"));
+        //paciente.add(new Paciente(R.drawable.hombre, "sura", "sura","ninguno", "cr7", "322222", "no", "hombre", "ninguno", "tos", "si"));
 
         adaptador = new AdapterPaciente(paciente, this);
         llm = new LinearLayoutManager(this);

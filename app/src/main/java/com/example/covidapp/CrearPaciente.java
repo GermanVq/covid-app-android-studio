@@ -2,6 +2,7 @@ package com.example.covidapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -150,6 +151,11 @@ public class CrearPaciente extends AppCompatActivity {
         Random r = new Random();
         fotoSeleccionada = r.nextInt(fotos.length);
         return fotos[fotoSeleccionada];
+    }
+    public void onBackPressed(){
+        finish();
+        Intent i = new Intent(CrearPaciente.this, MenuActivity.class);
+        startActivity(i);
     }
     public void borrar(View v){
         nombre.setText("");
