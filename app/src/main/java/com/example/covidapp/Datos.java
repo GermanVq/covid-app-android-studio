@@ -9,7 +9,13 @@ public class Datos {
         paciente.add(p);
     }
 
+    public static void eliminar(Paciente p){
+        paciente.remove(p);
+    }
+
     public static ArrayList<Paciente> obtener(){
         return paciente;
     }
+
+
 }

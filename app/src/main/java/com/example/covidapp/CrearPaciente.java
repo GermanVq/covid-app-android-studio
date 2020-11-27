@@ -26,6 +26,7 @@ public class CrearPaciente extends AppCompatActivity {
     private RadioButton rbSi, rbNo;
     private String resCov;
     private String resSin;
+    private ArrayList<String> resSintomas;
 
 
     @Override
@@ -61,14 +62,15 @@ public class CrearPaciente extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, opcionesSexo);
         sexo.setAdapter(adapter2);
 
+
 /*
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(c1.isChecked()){
-                    resSin.add("Tos");
+                    resSintomas.add("Tos");
                 }else{
-                    resSin.remove("Tos");
+                    resSintomas.remove("Tos");
                 }
             }
         });
@@ -76,9 +78,9 @@ public class CrearPaciente extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(c2.isChecked()){
-                    resSin.add("Gripe");
+                    resSintomas.add("Gripe");
                 }else{
-                    resSin.remove("Gripe");
+                    resSintomas.remove("Gripe");
                 }
             }
         });
@@ -86,9 +88,9 @@ public class CrearPaciente extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(c3.isChecked()){
-                    resSin.add("Dolor");
+                    resSintomas.add("Dolor");
                 }else {
-                    resSin.remove("Dolor");
+                    resSintomas.remove("Dolor");
                 }
             }
         });
@@ -96,31 +98,49 @@ public class CrearPaciente extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(c4.isChecked()){
-                    resSin.add("Fatiga");
+                    resSintomas.add("Fatiga");
                 }else{
-                    resSin.remove("Fatiga");
+                    resSintomas.remove("Fatiga");
                 }
             }
         });
-*/
 
+
+ */
+
+    }
+    public String SintomasEnf(){
+        String sin = resSin;
+        if(c1.isChecked()){
+            sin = c1.getText().toString()+", ";
+        }
+        if(c2.isChecked()){
+            sin = c2.getText().toString()+", ";
+        }
+        if(c3.isChecked()){
+            sin = c3.getText().toString()+", ";
+        }
+        if(c4.isChecked()){
+            sin = c4.getText().toString()+", ";
+        }
+        if(c1.isChecked() == false && c2.isChecked() == false && c3.isChecked() == false && c4.isChecked() == false){
+            sin = getString(R.string.sin_sintomas);
+        }
+        return sin;
     }
 
     public void guardar(View v){
         if(rbSi.isChecked() == true){
-            resCov = "Positivo";
+            resCov = getString(R.string.positivo);
         }if(rbNo.isChecked() == true){
-            resCov = "Negativo";
+            resCov = getString(R.string.negativo);
         }else{
-            resCov = "Inseguro";
+            resCov = getString(R.string.incierto);
         }
-        if(c1.isChecked()){
-            String resSin = "tos";
-        }
+
         if(validar()){
             String nomb, ep, sex, dirc, num, motiv, contac, antec, cov, sinto;
             Paciente p;
-            String sint = "tos";
             nomb = nombre.getText().toString();
             ep = eps.getSelectedItem().toString();
             sex = sexo.getSelectedItem().toString();
@@ -130,10 +150,11 @@ public class CrearPaciente extends AppCompatActivity {
             contac = contacto.getText().toString();
             antec = antecedentes.getText().toString();
             cov = resCov;
-            sinto = resSin;
+            sinto =  SintomasEnf();
 
             p = new Paciente(fotoAleatoria(fotos), nomb, ep, motiv, dirc, num, contac, sex, antec, sinto, cov );
             p.guardar();
+            borrar(v);
 
             Toast.makeText(this, getString(R.string.mensaje_guardado), Toast.LENGTH_LONG).show();
         }
@@ -142,6 +163,33 @@ public class CrearPaciente extends AppCompatActivity {
     public Boolean validar(){
         nombre = findViewById(R.id.txtNombre);
         if (nombre.getText().toString().isEmpty()){
+            nombre.setError(getString(R.string.mensaje_error));
+            nombre.requestFocus();
+            return false;
+        }
+        if (direccion.getText().toString().isEmpty()){
+            direccion.setError(getString(R.string.mensaje_error));
+            direccion.requestFocus();
+            return false;
+        }
+        if (numero.getText().toString().isEmpty()){
+            numero.setError(getString(R.string.mensaje_error));
+            numero.requestFocus();
+            return false;
+        }
+        if (motivo.getText().toString().isEmpty()){
+            motivo.setError(getString(R.string.mensaje_error));
+            motivo.requestFocus();
+            return false;
+        }
+        if (contacto.getText().toString().isEmpty()){
+            contacto.setError(getString(R.string.mensaje_error));
+            contacto.requestFocus();
+            return false;
+        }
+        if (antecedentes.getText().toString().isEmpty()){
+            antecedentes.setError(getString(R.string.mensaje_error));
+            antecedentes.requestFocus();
             return false;
         }
         return true;
