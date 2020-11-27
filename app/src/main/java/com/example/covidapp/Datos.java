@@ -10,7 +10,12 @@ public class Datos {
     }
 
     public static void eliminar(Paciente p){
-        paciente.remove(p);
+        for (int i = 0; i < paciente.size(); i++){
+            if(paciente.get(i).getNumero().equals(p.getNumero())){
+                paciente.remove(i);
+                break;
+            }
+        }
     }
 
     public static ArrayList<Paciente> obtener(){

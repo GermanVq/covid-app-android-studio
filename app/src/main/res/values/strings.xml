@@ -12,7 +12,7 @@
     <string name="contacto">Contacto</string>
     <string name="sexo">Sexo</string>
     <string name="Antecedentes">Antecedentes</string>
-    <string name="sintomas">Sintomas</string>
+    <string name="sintomas">Síntomas</string>
     <string name="covid">Covid</string>
     <string name="registrar_paciente">Formulario Paciente</string>
     <string name="sura">Sura</string>
@@ -22,12 +22,12 @@
     <string name="hombre">Hombre</string>
     <string name="Mujer">Mujer</string>
     <string name="tos">Tos</string>
-    <string name="gripa">Gripa</string>
+    <string name="gripa">Gripe</string>
     <string name="dolor_cabeza">Dolor</string>
     <string name="fatiga">Fatiga</string>
     <string name="si">Si</string>
     <string name="no">No</string>
-    <string name="guardado">Paciente guardado correctamente</string>
+    <string name="guardado">Paciente guardado con éxito</string>
     <string name="helicoptero">Helicóptero Apache</string>
     <string name="iniciar">INICIAR</string>
     <string name="bienvendida">Bienvenido a la CovidApp!</string>
@@ -38,14 +38,17 @@
     <string name="bienvenido">Bienvenido</string>
     <string name="registrate">Registrate para ingresar a la App</string>
     <string name="repetir_contrasena">Repetir contraseña</string>
-    <string name="ya_registrado">Ya estas registrado? click para ingresar</string>
+    <string name="ya_registrado">¿Ya estás registrado? haz clic para entrar</string>
     <string name="detalle_paciente">Detalle de Paciente</string>
     <string name="mensaje_guardado">Paciente guardado exitosamente!</string>
     <string name="positivo">Positivo</string>
     <string name="negativo">Negativo</string>
-    <string name="sin_sintomas">Sin sintomas</string>
+    <string name="sin_sintomas">Sin síntomas</string>
     <string name="incierto">Incierto</string>
     <string name="mensaje_error">Por favor complete el campo requerido</string>
+    <string name="eliminar_paciente">Eliminar paciente</string>
+    <string name="seguro">¿Estás seguro de que quieres eliminar a este paciente?</string>
+
     <string-array name="epsSp">
         <item>@string/sura</item>
         <item>@string/coomeva</item>

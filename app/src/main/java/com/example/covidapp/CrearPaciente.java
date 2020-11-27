@@ -1,6 +1,7 @@
 package com.example.covidapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,6 +34,8 @@ public class CrearPaciente extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_paciente);
+
+
         nombre = findViewById(R.id.txtNombre);
         motivo = findViewById(R.id.txtMotivo);
         direccion = findViewById(R.id.txtDireccion);
@@ -112,16 +115,16 @@ public class CrearPaciente extends AppCompatActivity {
     public String SintomasEnf(){
         String sin = resSin;
         if(c1.isChecked()){
-            sin = c1.getText().toString()+", ";
+            sin = sin + c1.getText().toString()+", ";
         }
         if(c2.isChecked()){
-            sin = c2.getText().toString()+", ";
+            sin = sin + c2.getText().toString()+", ";
         }
         if(c3.isChecked()){
-            sin = c3.getText().toString()+", ";
+            sin = sin + c3.getText().toString()+", ";
         }
         if(c4.isChecked()){
-            sin = c4.getText().toString()+", ";
+            sin = sin + c4.getText().toString()+", ";
         }
         if(c1.isChecked() == false && c2.isChecked() == false && c3.isChecked() == false && c4.isChecked() == false){
             sin = getString(R.string.sin_sintomas);
